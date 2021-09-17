@@ -1,0 +1,241 @@
+html, body {
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 85%;
+    margin-top: 11em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.contentText{
+    margin-left: 1;
+    display:inline;
+    text-align: justify;
+}
+
+.profileImage {
+    width: 200px;
+    margin: 2em 1em 40em 1em;
+    float: left;
+    border: solid 4px white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+  
+}
+
+
+
+.bio {
+    color: white;
+    margin: 1em;
+    padding: 0em;
+    font-size: 1.2em;
+    line-height: 1.75;
+    letter-spacing: .05em;
+}
+
+header {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: auto;
+}
+
+h1 {
+    color: white;
+}
+
+#toptext {
+    display: block;
+    color: rgb(245, 245, 245);
+    font-size: 6em;
+    letter-spacing: .1em;
+    text-align: center;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(33,16,186,1) 0%, rgba(175,0,255,1) 100%);
+}
+
+h2 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 1rem 0 1rem;
+}
+
+p, li, a {
+    color: white;
+    margin: 0em;
+    padding: 0em;
+    font-size: 1em;
+    list-style-type: none;
+    line-height: 1.75em;
+    letter-spacing: .05em;
+    text-decoration: none;
+}
+
+
+nav {
+    content: "";
+    clear: both;
+    background-color: #999999;
+    width: 100vw;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .7);
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+}
+
+nav li{
+    display: flex;
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    border: none;
+    margin: 0;
+    padding: .5em 1em .5em 1em;
+    background-color: #999999;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.active:hover{
+    background-color: #1016ba;
+}
+nav a:hover{
+    background: rgb(2,0,36);
+    color: greenyellow;
+}
+
+.active {
+    background-color: #1016ba;
+}
+
+#heading1{
+    margin-top: 50px;
+}
+
+.subSkill{
+    display: flex;
+    flex-direction: row;
+    /* align-items: baseline; */
+    margin-top: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,203,217,1) 0%, rgba(175,0,255,1) 100%);
+    box-shadow: 5px 10px #ffffff;
+}
+
+.subSkill p{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.subSkill img{
+    margin-top: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contactInfo{
+    margin-top: 60px;
+}
+
+form input:nth-of-type(1),input:nth-of-type(2){
+    line-height: 3em;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+input{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(155,68,217,0.7371323529411764) 0%, rgba(0,159,255,0.927608543417367) 100%);    border-radius: 4%;
+    color: white;
+}
+textarea{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(155,68,217,0.7371323529411764) 0%, rgba(0,159,255,0.927608543417367) 100%);    border-radius: 4%;
+    color: white;
+}
+#submitButton{
+    margin-top: 15px;
+    font-size: 35px;
+    border-radius: 2%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,137,214,1) 0%, rgba(168,179,165,1) 100%);    
+}
+#contactInfo{
+    border: 7px solid white;
+    border-radius: 5%;
+    padding: 4%;
+}
+#details{
+    margin-top: 110px;
+    
+}
+
+.subInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.subInfo img:hover{
+    transition: 0.5s;
+    transform: scale(1.17);
+}
+table{
+    border: 1px solid white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(147,83,172,1) 0%, rgba(25,11,130,0.6082808123249299) 100%);
+  }
+
+th,td{
+    border: 1px solid white;
+}
+  table{
+      width: 70%;
+  }
+
+
+
+
